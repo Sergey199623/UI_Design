@@ -30,10 +30,25 @@
                 android:id="@+id/toolbar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:background="#00008577">
-            </androidx.appcompat.widget.Toolbar>
+                android:background="#00008577"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:navigationIcon="@drawable/menu"/>
 
-
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:text="Traveling"
+                android:textSize="30sp"
+                android:fontFamily="@font/baloo"
+                app:layout_constraintEnd_toStartOf="@+id/imageView"
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
